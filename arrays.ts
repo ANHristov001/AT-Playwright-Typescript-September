@@ -23,3 +23,16 @@ let checkTypeOf = combinedArray.map((element: number | string) => {
 })
 console.log(checkTypeOf);
 
+let test: any = "test"
+test = 10
+test = [10, 50, `test`]
+
+let testUnknown: unknown = [10, 50];
+
+if (typeof testUnknown === `number`) {
+    testUnknown = 2
+}
+let a: string | undefined;
+
+let b: null = null;
+
