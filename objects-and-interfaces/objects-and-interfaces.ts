@@ -107,3 +107,27 @@ const thirdUser: UserPermissions = {
     job: `QA`,
     permissions: "denied",
 };
+
+// exercise sym total price
+interface Product {
+    name: string;
+    price: number;
+    getTotalPrice: (quantity: number) => number;
+}
+
+const phone: Product = {
+    name: 'Nokia',
+    price: 100,
+    getTotalPrice: function(quantity: number) {
+        return quantity * this.price;
+    },
+};
+
+function orderDetails(quantity: number, product: Product) {    
+    console.log(`Order for: ${product.name}`);
+    console.log(`Product quantity: ${quantity}`);
+    console.log(`Product unit price: ${product.price}$`);
+    console.log(`Total price: ${product.getTotalPrice(quantity)}$`);
+}
+
+orderDetails(5, phone);
