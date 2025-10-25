@@ -71,10 +71,10 @@ function calculateTotalPrice(c: Customer): number {
 displayCart(customer);
 displayCart(customer2);
 
-// console.log("\nFiltered products:");
-// console.table({
-//     food: filterByCategory(products, "food").map(p => p.name),
-//     clothes: filterByCategory(products, "clothes").map(p => p.name),
-//     electronics: filterByCategory(products, "electronics").map(p => p.name),
-// });
+console.log("\nFiltered products:");
+console.table({
+    food: filterByCategory(products, "food").map(p => p.name),
+    clothes: filterByCategory(products, "clothes").map(p => p.name),
+    electronics: filterByCategory(products, "electronics").map(p => p.name),
+});
 export {};
