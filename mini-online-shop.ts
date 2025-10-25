@@ -68,8 +68,8 @@ function calculateTotalPrice(c: Customer): number {
     return c.cart.reduce((sum, p) => sum +p.price, 0);
 }
 
-// displayCart(customer);
-// displayCart(customer2);
+displayCart(customer);
+displayCart(customer2);
 
 // console.log("\nFiltered products:");
 // console.table({
@@ -77,6 +77,4 @@ function calculateTotalPrice(c: Customer): number {
 //     clothes: filterByCategory(products, "clothes").map(p => p.name),
 //     electronics: filterByCategory(products, "electronics").map(p => p.name),
 // });
-
-
 export {};
